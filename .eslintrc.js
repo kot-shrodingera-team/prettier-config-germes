@@ -1,5 +1,11 @@
 module.exports = {
-  ignorePatterns: ['!.prettierrc.js'],
+  env: {
+    browser: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
+  ignorePatterns: ['!.*', 'node_modules'],
   overrides: [
     {
       files: ['*.js'],
